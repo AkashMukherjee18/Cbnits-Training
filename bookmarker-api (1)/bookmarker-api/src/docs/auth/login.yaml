@@ -1,0 +1,24 @@
+tags:
+-authentication
+parameters:
+-name: body
+description: the body should contain
+required: true
+schema:
+type: object
+required:
+  - "email"
+  -'password'
+  properties:
+  email:
+  type: "email"
+  password:
+  type:"string"
+  format:"password"
+  responces:
+  200:
+  description: when a user successfully log in.
+  400:
+  description: when a user failed to login due to  bad request.
+  401:
+  descripption: whren a user input wrong credentials

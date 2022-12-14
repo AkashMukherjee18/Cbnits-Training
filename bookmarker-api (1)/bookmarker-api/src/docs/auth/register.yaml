@@ -1,0 +1,26 @@
+tags:
+-authentication
+paramerters:
+-name: body
+description: the body should contain the uaer registration data
+in: header
+required: true
+schema:
+type: object 
+required: 
+-"email"
+"password"
+"username"
+properties:
+email:
+type: "email"
+username: 
+type: username
+password:
+type: string
+format: password
+responces:
+201:
+description: when a user successfully log in.
+400:
+description:failed to register due to bad request data 

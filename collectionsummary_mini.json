@@ -1,0 +1,79 @@
+{
+	"project": "log4j",
+	"count": 78,
+	"partial": 15,
+	"missed": 56,
+	"resolved": 7,
+	"collectionreport": [{
+		"input": {
+			"pkgInfo": {
+				"resourceid": "org.apache.logging.log4j:log4j-core:2.14.1",
+				"category": "build"
+			}
+		},
+		"output": {
+			"srcInfo": {
+				"srcurl": "https://github.com/apache/logging-log4j2",
+				"type": "github",
+				"matchingref": "log4j-2.14.1-rc1"
+			},
+			"pkgInfo": {
+				"resourceid": "org.apache.logging.log4j:log4j-core:2.14.1",
+				"pkgurl": "https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core",
+				"type": "maven",
+				"category": "build",
+				"dependencies": [{
+					"input": {
+						"pkgInfo": {
+							"resourceid": "com.fasterxml.jackson.core:jackson-core:2.14.1",
+							"isopensource": true,
+							"category": "build"
+						}
+					},
+					"status": "missed"
+				}, {
+					"input": {
+						"pkgInfo": {
+							"resourceid": "log4j:log4j:1.2.17",
+							"isopensource": true,
+							"category": "build"
+						}
+					},
+					"output": {
+						"srcInfo": {
+							"srcurl": "https://github.com/log4j/",
+							"type": "github"
+						},
+						"pkgInfo": {
+							"resourceid": "log4j:log4j:1.2.17",
+							"pkgurl": "https://repo1.maven.org/maven2/log4j/log4j",
+							"type": "maven",
+							"category": "build",
+							"dependencies": [{
+								"input": {
+									"pkgInfo": {
+										"resourceid": "org.apache.openejb:javaee-api:5.0-2",
+										"category": "build"
+									}
+								},
+								"output": {
+									"srcInfo": {
+										"srcurl": "https://github.com/codehaus/woodstox",
+										"type": "github"
+									},
+									"pkgInfo": {
+										"resourceid": "org.apache.openejb:javaee-api:5.0-2",
+										"pkgurl": "https://repo1.maven.org/maven2/org/apache/openejb/javaee-api",
+										"type": "maven",
+										"category": "build"
+									}
+								},
+								"status": "partial"
+							}]
+						}
+					}
+				}]
+			}
+		}
+	}]
+}

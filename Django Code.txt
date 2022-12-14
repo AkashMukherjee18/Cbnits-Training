@@ -1,0 +1,16 @@
+    path('admin/', admin.site.urls),
+    # path('', views.home),
+    path('home_1/', views.home1),
+    path('home_1/signup/', views.signup, name='signup'),
+    path('home_1/signup/login', views.login, name='login'),
+    path('home_1/signup/login/design', views.design, name='design'),
+    # path('home_1/design/', views.design, name='design'),
+    # path('home_1/design/form/design1', views.form, name='form'),
+    path('/form/design1', views.form, name='form'),
+    # path('home_1/design/upload', views.upload, name='upload'), # correct code
+    path('home_1/design/upload', views.upload, name='upload'), #new add
+    # path('home_1/design/form/Design1', views.Design1, name='Design1'),
+    path('form/Design1', views.Design1, name='Design1'),
+    path('about-us/', views.aboutUS),
+    path('course/', views.course),
+    path('course/<courseid>', views.courseDetails),
